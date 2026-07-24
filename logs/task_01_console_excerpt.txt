@@ -1,0 +1,90 @@
+Injected corrected Task 01 into esp32: /content/tactic_pilot/task_01_corrected/changed_esp32/main/hello_world_main.c
+Injected corrected Task 01 into esp32s3: /content/tactic_pilot/task_01_corrected/changed_esp32s3/main/hello_world_main.c
+
+===== esp32 CONFIGURATION =====
+nker script /content/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /content/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+-- Adding linker script /content/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx efuse esp_app_format esp_bootloader_format esp_common esp_driver_gpio esp_hw_support esp_mm esp_partition esp_pm esp_rom esp_security esp_system esp_timer esptool_py freertos hal heap log main mbedtls newlib partition_table pthread soc spi_flash xtensa
+-- Component paths: /content/esp-idf/components/app_update /content/esp-idf/components/bootloader /content/esp-idf/components/bootloader_support /content/esp-idf/components/cxx /content/esp-idf/components/efuse /content/esp-idf/components/esp_app_format /content/esp-idf/components/esp_bootloader_format /content/esp-idf/components/esp_common /content/esp-idf/components/esp_driver_gpio /content/esp-idf/components/esp_hw_support /content/esp-idf/components/esp_mm /content/esp-idf/components/esp_partition /content/esp-idf/components/esp_pm /content/esp-idf/components/esp_rom /content/esp-idf/components/esp_security /content/esp-idf/components/esp_system /content/esp-idf/components/esp_timer /content/esp-idf/components/esptool_py /content/esp-idf/components/freertos /content/esp-idf/components/hal /content/esp-idf/components/heap /content/esp-idf/components/log /content/tactic_pilot/task_01_corrected/changed_esp32/main /content/esp-idf/components/mbedtls /content/esp-idf/components/newlib /content/esp-idf/components/partition_table /content/esp-idf/components/pthread /content/esp-idf/components/soc /content/esp-idf/components/spi_flash /content/esp-idf/components/xtensa
+-- Configuring done (5.6s)
+-- Generating done (0.3s)
+-- Build files have been written to: /content/tactic_pilot/task_01_corrected/changed_esp32/build
+===== TARGET CONFIGURATION =====
+CONFIG_IDF_TARGET="esp32"
+CONFIG_IDF_TARGET_ESP32=y
+
+
+===== esp32s3 CONFIGURATION =====
+er script /content/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
+-- Adding linker script /content/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /content/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx efuse esp_app_format esp_bootloader_format esp_common esp_driver_gpio esp_hw_support esp_mm esp_partition esp_pm esp_rom esp_security esp_system esp_timer esptool_py freertos hal heap log main mbedtls newlib partition_table pthread soc spi_flash xtensa
+-- Component paths: /content/esp-idf/components/app_update /content/esp-idf/components/bootloader /content/esp-idf/components/bootloader_support /content/esp-idf/components/cxx /content/esp-idf/components/efuse /content/esp-idf/components/esp_app_format /content/esp-idf/components/esp_bootloader_format /content/esp-idf/components/esp_common /content/esp-idf/components/esp_driver_gpio /content/esp-idf/components/esp_hw_support /content/esp-idf/components/esp_mm /content/esp-idf/components/esp_partition /content/esp-idf/components/esp_pm /content/esp-idf/components/esp_rom /content/esp-idf/components/esp_security /content/esp-idf/components/esp_system /content/esp-idf/components/esp_timer /content/esp-idf/components/esptool_py /content/esp-idf/components/freertos /content/esp-idf/components/hal /content/esp-idf/components/heap /content/esp-idf/components/log /content/tactic_pilot/task_01_corrected/changed_esp32s3/main /content/esp-idf/components/mbedtls /content/esp-idf/components/newlib /content/esp-idf/components/partition_table /content/esp-idf/components/pthread /content/esp-idf/components/soc /content/esp-idf/components/spi_flash /content/esp-idf/components/xtensa
+-- Configuring done (5.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: /content/tactic_pilot/task_01_corrected/changed_esp32s3/build
+===== TARGET CONFIGURATION =====
+CONFIG_IDF_TARGET="esp32s3"
+CONFIG_IDF_TARGET_ESP32S3=y
+
+
+Building corrected changed project for ESP32...
+
+===== LAST BUILD OUTPUT: esp32 =====
+LOCKS -I/content/tactic_pilot/task_01_corrected/changed_esp32/build/config -I/content/esp-idf/components/newlib/platform_include -I/content/esp-idf/components/freertos/config/include -I/content/esp-idf/components/freertos/config/include/freertos -I/content/esp-idf/components/freertos/config/xtensa/include -I/content/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/content/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/content/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/content/esp-idf/components/freertos/esp_additions/include -I/content/esp-idf/components/esp_hw_support/include -I/content/esp-idf/components/esp_hw_support/include/soc -I/content/esp-idf/components/esp_hw_support/include/soc/esp32 -I/content/esp-idf/components/esp_hw_support/dma/include -I/content/esp-idf/components/esp_hw_support/ldo/include -I/content/esp-idf/components/esp_hw_support/debug_probe/include -I/content/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/content/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/content/esp-idf/components/esp_hw_support/power_supply/include -I/content/esp-idf/components/esp_hw_support/port/esp32/. -I/content/esp-idf/components/esp_hw_support/port/esp32/include -I/content/esp-idf/components/heap/include -I/content/esp-idf/components/heap/tlsf -I/content/esp-idf/components/log/include -I/content/esp-idf/components/soc/include -I/content/esp-idf/components/soc/esp32 -I/content/esp-idf/components/soc/esp32/include -I/content/esp-idf/components/soc/esp32/register -I/content/esp-idf/components/hal/platform_port/include -I/content/esp-idf/components/hal/esp32/include -I/content/esp-idf/components/hal/include -I/content/esp-idf/components/esp_rom/include -I/content/esp-idf/components/esp_rom/esp32/include -I/content/esp-idf/components/esp_rom/esp32/include/esp32 -I/content/esp-idf/components/esp_rom/esp32 -I/content/esp-idf/components/esp_common/include -I/content/esp-idf/components/esp_system/include -I/content/esp-idf/components/esp_system/port/soc -I/content/esp-idf/components/esp_system/port/include/private -I/content/esp-idf/components/xtensa/esp32/include -I/content/esp-idf/components/xtensa/include -I/content/esp-idf/components/xtensa/deprecated_include -I/content/esp-idf/components/spi_flash/include @"/content/tactic_pilot/task_01_corrected/changed_esp32/build/toolchain/cflags" -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/content/tactic_pilot/task_01_corrected/changed_esp32=. -fmacro-prefix-map=/content/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/hello_world_main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/hello_world_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/hello_world_main.c.obj -c /content/tactic_pilot/task_01_corrected/changed_esp32/main/hello_world_main.c
+/content/tactic_pilot/task_01_corrected/changed_esp32/main/hello_world_main.c:11:2: error: #error "TACTIC_TASK_01: controlled ESP32-only build failure"
+   11 | #error "TACTIC_TASK_01: controlled ESP32-only build failure"
+      |  ^~~~~
+[476/488] Building C object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj
+[477/488] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_impl.c.obj
+ninja: build stopped: subcommand failed.
+ninja failed with exit code 1, output of the command is in the /content/tactic_pilot/task_01_corrected/changed_esp32/build/log/idf_py_stderr_output_31579 and /content/tactic_pilot/task_01_corrected/changed_esp32/build/log/idf_py_stdout_output_31579
+
+{'target': 'esp32', 'status': 'FAIL', 'exit_code': 2, 'elapsed_seconds': 62.1, 'expected_status': 'FAIL', 'failure_marker_found': True, 'log_file': '/content/tactic_pilot/results/task_01_corrected_changed_esp32.log'}
+
+Building corrected changed project for ESP32-S3...
+{'target': 'esp32s3', 'status': 'PASS', 'exit_code': 0, 'elapsed_seconds': 72.45, 'expected_status': 'PASS', 'failure_marker_found': False, 'log_file': '/content/tactic_pilot/results/task_01_corrected_changed_esp32s3.log'}
+
+===== CORRECTED TASK 01 EVIDENCE =====
+{
+  "task_id": "TACTIC_TASK_01_CORRECTED",
+  "task_type": "controlled target-specific build defect",
+  "claim": "The injected change breaks the ESP32 build while preserving the ESP32-S3 build.",
+  "environment": {
+    "esp_idf_version": "v5.5.4",
+    "sample_project": "examples/get-started/hello_world",
+    "targets": [
+      "esp32",
+      "esp32s3"
+    ]
+  },
+  "baseline": {
+    "esp32": "PASS",
+    "esp32s3": "PASS"
+  },
+  "changed_results": {
+    "esp32": {
+      "target": "esp32",
+      "status": "FAIL",
+      "exit_code": 2,
+      "elapsed_seconds": 62.1,
+      "expected_status": "FAIL",
+      "failure_marker_found": true,
+      "log_file": "/content/tactic_pilot/results/task_01_corrected_changed_esp32.log"
+    },
+    "esp32s3": {
+      "target": "esp32s3",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 72.45,
+      "expected_status": "PASS",
+      "failure_marker_found": false,
+      "log_file": "/content/tactic_pilot/results/task_01_corrected_changed_esp32s3.log"
+    }
+  },
+  "admission_decision": "ADMIT",
+  "claim_supported": true
+}
+
+Saved to: /content/tactic_pilot/results/task_01_corrected_evidence.json

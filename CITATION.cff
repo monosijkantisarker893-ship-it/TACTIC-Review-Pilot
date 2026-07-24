@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the associated TACTIC-Review paper."
+title: "TACTIC-Review Colab Feasibility Pilot"
+type: software
+version: 1.0.0
+date-released: 2026-07-24
+authors:
+  - family-names: "Author"
+    given-names: "Anonymous"
+repository-code: "ADD_YOUR_PUBLIC_GITHUB_URL_HERE"

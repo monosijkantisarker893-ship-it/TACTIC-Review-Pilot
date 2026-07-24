@@ -1,0 +1,39 @@
+{
+  "task_id": "TACTIC_TASK_01_CORRECTED",
+  "task_type": "controlled target-specific build defect",
+  "claim": "The injected change breaks the ESP32 build while preserving the ESP32-S3 build.",
+  "environment": {
+    "esp_idf_version": "v5.5.4",
+    "sample_project": "examples/get-started/hello_world",
+    "targets": [
+      "esp32",
+      "esp32s3"
+    ]
+  },
+  "baseline": {
+    "esp32": "PASS",
+    "esp32s3": "PASS"
+  },
+  "changed_results": {
+    "esp32": {
+      "target": "esp32",
+      "status": "FAIL",
+      "exit_code": 2,
+      "elapsed_seconds": 62.1,
+      "expected_status": "FAIL",
+      "failure_marker_found": true,
+      "log_file": "/content/tactic_pilot/results/task_01_corrected_changed_esp32.log"
+    },
+    "esp32s3": {
+      "target": "esp32s3",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 72.45,
+      "expected_status": "PASS",
+      "failure_marker_found": false,
+      "log_file": "/content/tactic_pilot/results/task_01_corrected_changed_esp32s3.log"
+    }
+  },
+  "admission_decision": "ADMIT",
+  "claim_supported": true
+}

@@ -1,0 +1,21 @@
+{
+  "esp_idf_version": "v5.5.4",
+  "sample_project": "examples/get-started/hello_world",
+  "evaluation_stage": "clean baseline",
+  "results": [
+    {
+      "target": "esp32",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 79.9,
+      "log_file": "/content/tactic_pilot/results/baseline_esp32.log"
+    },
+    {
+      "target": "esp32s3",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 79.98,
+      "log_file": "/content/tactic_pilot/results/baseline_esp32s3.log"
+    }
+  ]
+}
